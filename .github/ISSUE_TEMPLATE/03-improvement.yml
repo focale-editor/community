@@ -1,0 +1,43 @@
+name: Improvement
+description: Improve an existing feature, workflow, performance or documentation.
+title: "[Improvement] "
+labels: [improvement, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and French are welcome. Search existing feedback before posting.
+        Use this form to refine something that already exists. Unexpected behavior can go in a bug report.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area to improve
+      options:
+        - Editing workflow or usability
+        - Performance or resource usage
+        - Accessibility
+        - Import, export or compatibility
+        - Download, installation or update
+        - Website, documentation or wording
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current experience
+      description: Which feature or page is involved, and what is difficult or inefficient? Include the version or URL if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested improvement
+      description: Explain the change and how it would make your work easier.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Examples and context
+      description: Add a before-and-after example, screenshot or measurement if useful. Mention workarounds or trade-offs. Remove private content.

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://focale-editor.app/docs
+    about: Read the user guides before opening a question.
+  - name: Downloads and release notes
+    url: https://github.com/focale-editor/get-focale/releases
+    about: Find published versions and their release notes.
+  - name: Report a security vulnerability privately
+    url: https://github.com/focale-editor/community/blob/main/SECURITY.md
+    about: Use the private contact for security vulnerabilities.

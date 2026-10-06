@@ -1,0 +1,34 @@
+name: Feature request
+description: Propose a new capability for Focale.
+title: "[Feature] "
+labels: [feature, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and French are welcome. Search existing proposals and keep one idea per issue.
+        Explain the task you want to complete; implementation details are optional.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to achieve?
+      description: Describe a concrete use case and what currently prevents you from completing it.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed capability
+      description: Describe how you would use the feature and what a successful result would look like.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and workarounds
+      description: How do you handle this today? What other approaches have you considered?
+  - type: textarea
+    id: context
+    attributes:
+      label: Examples and context
+      description: Add mockups, links or sample workflows if helpful. Mention any platform or file-format constraints. Share only material that can be public.

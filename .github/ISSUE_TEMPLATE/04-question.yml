@@ -1,0 +1,32 @@
+name: Question
+description: Ask for help with Focale or clarify how something works.
+title: "[Question] "
+labels: [question, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and French are welcome. Check the [documentation](https://focale-editor.app/docs) and existing issues first.
+        Questions and attachments are public; do not share private documents or credentials.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Describe what you want to do and where you need help.
+    validations:
+      required: true
+  - type: textarea
+    id: attempts
+    attributes:
+      label: What have you tried?
+      description: Mention the steps you took or the guides you checked, if any.
+  - type: input
+    id: environment
+    attributes:
+      label: Version and environment
+      description: If relevant, include your Focale version, operating system or the website page URL.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add a screenshot or small example if it helps explain the question.

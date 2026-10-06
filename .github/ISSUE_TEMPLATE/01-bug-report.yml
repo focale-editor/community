@@ -1,0 +1,75 @@
+name: Bug report
+description: Report unexpected behavior, a crash or a broken workflow.
+title: "[Bug] "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and French are welcome. Search existing issues before posting.
+        Reports and attachments are public; remove private images and personal data.
+        For security vulnerabilities, see [SECURITY.md](https://github.com/focale-editor/community/blob/main/SECURITY.md).
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where does the problem occur?
+      options:
+        - Editor
+        - Import or export
+        - Download, installation or update
+        - Website or documentation
+        - Other / not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Focale version
+      description: Include the build number if available. For the website, enter the page URL instead.
+      placeholder: Version and build, or page URL; write unknown if unavailable
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system and version, processor architecture, and relevant hardware. For the website, include your browser and version.
+      placeholder: OS and version, CPU, RAM, GPU or tablet if relevant, installation method
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+      description: Describe the problem and any error message. Mention whether it causes a crash or loss of work.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the starting document or settings. If it is intermittent, describe the last actions you remember.
+      placeholder: |
+        1. Open…
+        2. Select…
+        3. Observe…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Samples, screenshots and additional context
+      description: Attach a small public sample or recording if useful. Mention frequency, a workaround or the last version that worked. For updates, include installed and offered versions.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Paste only relevant output, with credentials and personal paths removed.
+      render: text
